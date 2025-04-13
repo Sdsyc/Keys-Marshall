@@ -1,4 +1,4 @@
-binary_sensor:
+binary_sensor: 
   - platform: gpio
     pin:
       number: 14
