@@ -1,0 +1,56 @@
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: 14
+      mode: INPUT_PULLUP
+    name: "Llaves 1"
+    icon: "mdi:key-chain"  
+    device_class: presence
+    id: marshall_llave_1
+    filters:
+      - invert:
+    on_press:
+      then:
+        - logger.log: "Llaves 1 Ok"
+
+  - platform: gpio
+    pin:
+      number: 27
+      mode: INPUT_PULLUP
+    name: "Llaves 2"
+    icon: "mdi:key-chain"  
+    device_class: presence
+    id: marshall_llave_2
+    filters:
+      - invert:
+    on_press:
+      then:
+        - logger.log: "Llaves 2 Ok"
+
+  - platform: gpio
+    pin:
+      number: 26
+      mode: INPUT_PULLUP
+    name: "Llaves 3"
+    icon: "mdi:key-chain"  
+    device_class: presence
+    id: marshall_llave_3
+    filters:
+      - invert:
+    on_press:
+      then:
+        - logger.log: "Llaves 3 Ok"
+
+  - platform: gpio
+    pin:
+      number: 25
+      mode: INPUT_PULLUP
+    name: "Llaves 4"
+    icon: "mdi:key-chain"  
+    device_class: presence
+    id: marshall_llave_4
+    filters:
+      - invert:
+    on_press:
+      then:
+        - logger.log: "Llaves 4 Ok"
